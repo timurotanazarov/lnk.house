@@ -1,0 +1,44 @@
+.rep{
+    padding-top: 50px;
+    padding-bottom: 70px;
+
+    &-row{
+        display: flex;
+        flex-direction: column;
+    }
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+
+        h3{
+            margin: 0;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 110%;
+            color: #2c2d35;
+        }
+    }
+    &-buttons{
+        column-gap: 34px;
+        display: flex;
+        
+        
+        button{
+            color: #2c2d35;
+            background-color: #d4e8d9;
+            border-radius: 20px;
+            padding: 9px 20px;
+            font-size: 20px;
+            line-height: 23px;
+            border: 2px solid transparent;
+            transition: all 0.2s ease-in-out;
+
+            &:hover{
+                border: 2px solid #376b44;
+            }
+        }
+    }
+}

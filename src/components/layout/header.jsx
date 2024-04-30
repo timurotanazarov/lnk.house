@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../../../public/imgs/logo.svg'
 import CartIcon from '../../assets/icons/CartIcon'
+import MenuIcon from '../../assets/icons/MenuIcon';
 
 function header() {
   return (
@@ -15,14 +16,14 @@ function header() {
             <a href="">Новинки</a>
             <a href="">О нас</a>
             <CartIcon />
+            <div className="menu-burger">
+            <MenuIcon />
+          </div>
           </nav>
         </div>
-      </div>
-      <div className="menu-burger">
-        
       </div>
     </header>
   )
 }
 
-export default header
+export default header;

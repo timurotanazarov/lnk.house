@@ -21,12 +21,22 @@
         align-items: center;
         column-gap: 60px;
 
+        @media screen and (max-width: 500px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 30px;
+        }
+
         a{
             position: relative;
             color: #2c2d35;
             font-size: 20px;
             transition: all 0.2s ease-in-out;
             font-weight: 500;
+            @media screen and (max-width: 500px) {
+              display: none;
+            }
 
             &:hover{
                 color: #598d66;
@@ -58,4 +68,11 @@
             }
         }
     }
+}
+.menu-burger{
+  display: none;
+
+  @media screen and (max-width: 500px) {
+    display: block;
+  }
 }
