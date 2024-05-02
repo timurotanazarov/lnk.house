@@ -13,17 +13,30 @@
         margin-bottom: 30px;
         flex-wrap: wrap;
 
+
         h3{
             margin: 0;
             font-weight: 500;
             font-size: 40px;
             line-height: 110%;
             color: #2c2d35;
+
+            @media screen and (max-width: 500px) {
+                margin-right: 0;
+                margin-bottom: 21px;
+                font-size: 24px;
+                line-height: 110%;
+            }
         }
     }
     &-buttons{
         column-gap: 34px;
         display: flex;
+
+        @media screen and (max-width: 460px) {
+            column-gap: 20px;
+            
+        }
         
         
         button{
@@ -36,8 +49,132 @@
             border: 2px solid transparent;
             transition: all 0.2s ease-in-out;
 
+            @media screen and (max-width: 420px) {
+                padding: 7px 15px; 
+                font-size: 16px;
+            }
+
             &:hover{
                 border: 2px solid #376b44;
+            }
+        }
+    }
+    &-page{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        @media screen and (max-width: 500px) {
+            justify-content: center;       
+        }
+    }
+    &-box{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        height: 100%;
+        background-color: #e1ede6;
+
+        @media screen and (max-width: 500px) {
+            padding: 50px;       
+        }
+        @media screen and (max-width: 480px) {
+            padding: 45px;       
+        }
+        @media screen and (max-width: 460px) {
+            padding: 40px;       
+        }
+        @media screen and (max-width: 430px) {
+            padding: 20px;       
+        }
+
+        &__img{
+            width: 310px;
+            height: 422px;
+            padding-bottom: 16px;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        p{
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            line-height: 21px;
+            color: #86928b;
+            font-weight: 500;
+
+            @media screen and (max-width: 500px) {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+        h3{
+            margin: 0;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            color: #2c2d35;
+
+            @media screen and (max-width: 500px) {
+                font-size: 16px;
+                line-height: 19px;
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+        h6{
+            display: inline-block;
+            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 21px;
+            color: #2c2d35;
+            font-weight: 500;
+
+            @media screen and (max-width: 500px) {
+                margin-bottom: 11px;
+                min-height: 38px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+        h5{
+            margin-bottom: 20px;
+            font-size: 24px;
+            line-height: 28px;
+            color: #598d66;
+            font-weight: 500;
+
+            @media screen and (max-width: 500px) {
+                margin-bottom: 11px;
+                font-size: 20px;
+                line-height: 23px;
+            }
+        }
+        button{
+            color: #598d66;
+            font-weight: 500;
+            border: 1px solid #598d66;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            font-family: inherit;
+            padding: 20px 60px;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+
+            @media screen and (max-width: 500px) {
+                padding: 13px 29px;
+                font-size: 18px;
+                line-height: 21px;
+              }
+
+            &:hover{
+                background-color: #598d66;
+                color: #fff;
             }
         }
     }
