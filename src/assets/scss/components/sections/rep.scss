@@ -13,6 +13,11 @@
         margin-bottom: 30px;
         flex-wrap: wrap;
 
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+            margin-bottom: 11px;
+        }
+
 
         h3{
             margin: 0;
@@ -32,10 +37,19 @@
     &-buttons{
         column-gap: 34px;
         display: flex;
+        
+
+        a{
+            text-decoration: underline;
+            font-family: inherit;
+            font-size: 24px;
+        }
 
         @media screen and (max-width: 460px) {
             column-gap: 20px;
-            
+            text-decoration: underline;
+            font-family: inherit;
+            font-size: 16px;
         }
         
         
@@ -65,7 +79,8 @@
         gap: 30px;
 
         @media screen and (max-width: 500px) {
-            justify-content: center;       
+            justify-content: center;  
+            align-items: center;     
         }
     }
     &-box{
@@ -179,3 +194,15 @@
         }
     }
 }
+.all{
+    position: absolute;
+    margin: 77px 0 0 0;
+   }
+   .all-mini-block{
+       display: flex;
+       gap: 30px;
+
+       @media screen and (max-width: 500px) {
+            flex-direction: column;
+       }
+   }

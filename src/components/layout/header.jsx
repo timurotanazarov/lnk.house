@@ -12,8 +12,8 @@ function header() {
             <img src={Logo} alt="" />
           </div>
             <nav className="header-nav">
-            <a href="">Репродукции</a>
-            <a href="">Новинки</a>
+            <a href="#rep">Репродукции</a>
+            <a href="#nov">Новинки</a>
             <a href="">О нас</a>
             <CartIcon />
             <div className="menu-burger">

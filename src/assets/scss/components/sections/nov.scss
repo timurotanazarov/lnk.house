@@ -1,0 +1,94 @@
+.nov{
+    position: relative;
+    padding-top: 66px;
+    padding-bottom: 73px;
+    background-image: url(https://live.verstaem.online/house/img/newbies-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 300px 200px rgba(0,0,0,0.3);
+
+    @media screen and (max-width: 500px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-image: url(	https://live.verstaem.online/house/img/newbies-bg-mini.jpg);
+    }
+
+    &-content{
+        h3{
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 110%;
+            position: relative;
+            z-index: 5;
+            font-family: inherit;
+            margin-bottom: 16px;
+            padding-left: 100px;
+            max-width: 521px;
+            color: #fff;
+            background-image: url(https://live.verstaem.online/house/img/star.svg);
+            background-position: left center;
+            background-size: 80px 80px;
+            background-repeat: no-repeat;
+            
+            @media screen and (max-width: 500px) {
+                margin-bottom: 19px;
+                max-width: 400px;
+                padding-left: 70px;
+                background-size: 50px 50px; 
+                font-size: 24px;
+                line-height: 110%;
+            }
+        }
+        &__p{
+            max-width: 540px;
+            width: 100%;
+            font-size: 18px;
+            line-height: 150%;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 60px;
+
+            @media screen and (max-width: 500px) {
+                margin-bottom: 20px;
+                font-size: 16px;
+                line-height: 140%;  
+            }
+
+            p{
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+        button{
+            display: inline-block;
+            outline: none;
+            border: 1px solid transparent;
+            padding: 20px 50px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            color: #2c2d35;
+            background-color: #eedb6d;
+            font-family: inherit;
+            transition: all 0.2s ease-in-out;
+
+            &:hover{
+                background-color: #faeb97;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 18px;
+                line-height: 21px;  
+                padding: 13px 20px;
+                min-width: 190px;
+            }
+            @media screen and (max-width: 480px) {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+}
