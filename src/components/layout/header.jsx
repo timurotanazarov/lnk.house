@@ -14,7 +14,7 @@ function header() {
             <nav className="header-nav">
             <a href="#rep">Репродукции</a>
             <a href="#nov">Новинки</a>
-            <a href="">О нас</a>
+            <a href="#onas">О нас</a>
             <CartIcon />
             <div className="menu-burger">
             <MenuIcon />
