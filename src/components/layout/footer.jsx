@@ -13,7 +13,7 @@ function footer() {
             <div className="header-logo footer-logo">
               <img src={Logo} alt="" />
             </div>
-            <a href="tel:+998919990525" className="footer-box__tel">+7 (999) 999-99-99</a>
+            <a href="tel:+998919990525" className="footer-box__tel tel">+7 (999) 999-99-99</a>
             <a href="" className="footer-box__link">Мастерская</a>
           </div>
           <div className="footer-box">

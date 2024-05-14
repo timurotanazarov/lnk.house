@@ -10,6 +10,12 @@
     &-row{
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 500px) {
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+        }
     }
     &-box{
         display: flex;
@@ -38,6 +44,11 @@
             color: #2c2d35;
             font-weight: 500;
             transition: all 0.2s ease-in-out;
+
+            @media screen and (max-width: 500px) {
+                font-size: 16px;
+                line-height: 19px;
+            }
 
             &:hover{
                 color: #598d66;
@@ -70,4 +81,7 @@
             }
         }
     }
+}
+.tel{
+    margin: 0;
 }
